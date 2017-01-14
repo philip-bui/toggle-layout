@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical">
+
+
+	<com.nextgeneration.ToggleLayout
+		android:id="@+id/expanding"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:minChildren="2"
+		android:orientation="vertical">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<Button
+				android:id="@+id/expand"
+				style="@style/Base.Widget.AppCompat.Button.Colored"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentEnd="true"
+				android:layout_alignParentRight="true"/>
+
+			<EditText
+				android:id="@+id/prefix"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_toLeftOf="@id/expand"
+				android:layout_toStartOf="@id/expand"
+				android:hint="@string/prefix"/>
+		</RelativeLayout>
+
+		<EditText
+			android:id="@+id/givenName"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="@string/given_name"/>
+
+		<EditText
+			android:id="@+id/middleName"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="@string/middle_name"/>
+
+		<EditText
+			android:id="@+id/familyName"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="@string/family_name"/>
+
+		<EditText
+			android:id="@+id/suffix"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="@string/suffix"/>
+	</com.nextgeneration.ToggleLayout>
+</LinearLayout>
