@@ -1,8 +1,7 @@
 # Android Toggle Layout
 
-[![Build Status](https://travis-ci.org/philip-bui/toggle-layout.svg)](https://travis-ci.org/philip-bui/toggle-layout)
-[![Release](https://jitpack.io/v/philip-bui/toggle-layout.svg)](https://jitpack.io/philip-bui/toggle-layout)
-[![Downloads](https://jitpack.io/v/philip-bui/toggle-layout/month.svg)](https://jitpack.io/philip-bui/toggle-layout)
+[![Release](https://jitpack.io/v/philip-bui/toggle-layout.svg)](https://jitpack.io/#philip-bui/toggle-layout)
+[![Downloads](https://jitpack.io/v/philip-bui/toggle-layout/month.svg)](https://jitpack.io/#philip-bui/toggle-layout)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/philip-bui/toggle-layout/blob/master/LICENSE)
 
 An extension of LinearLayout that allows users to expand and collapse views using fade down and fade up animations. 
@@ -10,11 +9,11 @@ An extension of LinearLayout that allows users to expand and collapse views usin
 - Configurable. Minimum children to show while collapsed.
 - Saved State. State is preserved upon screen rotation or recreation.
 - Animated - Transitions to expanded and collapsed states.
-- Thread safety - Expand and collapse animations will not interrupt or override each other, neither will not be queued. Users can only trigger transitions after an animation has completed.
+- Thread safety - Expand and collapse animations do not interrupt, override or queue after each other. Users only trigger transitions after state has been completed.
 
 ## Requirements
 
-- None. Toggle Layout is compatible with Android 1.0+.
+- Android SDK 1.0+.
 
 ## Installation
 
